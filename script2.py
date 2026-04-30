@@ -128,11 +128,17 @@ def capture_full_page(url, output_name="screenshot.png"):
         )
 
         print(f"Hotovo! Screenshot uložen jako {output_name}")
+        
+        print(page.evaluate("document.documentElement.scrollHeight"))
+        print(page.evaluate("document.body.scrollHeight"))
+        print(page.evaluate("document.scrollingElement.scrollHeight"))
 
         browser.close()
 
 
 capture_full_page(
-    "https://www.to-das.cz/cermat-prijimacky-nanecisto-2026-vysledky-a-zadani/",
-    "to-das-screenshot.png"
+    "https://oiwiki.swpelc.eu/doku.php?id=statnice:bakalar:b4b01dma",
+    "oiwiki-screenshot.png"
 )
+
+
