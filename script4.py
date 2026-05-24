@@ -1,8 +1,8 @@
 from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeoutError
 
 
-URL = "https://oiwiki.swpelc.eu/doku.php?id=statnice:bakalar:b4b01dma"
-OUTPUT_PDF = "oiwiki_dma.pdf"
+URL = "https://oiwiki.swpelc.eu/doku.php?id=statnice:bakalar:b0b01lgr"
+OUTPUT_PDF = "oiwiki_b4b36lgr.pdf"
 
 
 def get_page_metrics(page):
